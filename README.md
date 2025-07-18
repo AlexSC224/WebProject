@@ -47,8 +47,8 @@ dotnet run
 
 Abre un navegador y ve a:
 
-https://localhost:<Roles>/ para el CRUD de roles.
-https://localhost:<Personas>/ para el CRUD de personas.
+[https://localhost:<7268>/Rols](https://localhost:7268/Personas) para el CRUD de roles.
+[https://localhost:<7268>/Personas](https://localhost:7268/rols) para el CRUD de personas.
 
 
 
