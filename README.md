@@ -1,5 +1,5 @@
 WebAppMvc
-Este es un proyecto ASP.NET Core MVC que implementa un CRUD para gestionar roles y personas, conectado a una base de datos SQL Server (DESKTOP-C4JUHKE\SQLEXPRESS) usando autenticaciÛn de Windows. Incluye una relaciÛn entre Persona y Rol.
+Este es un proyecto ASP.NET Core MVC que implementa un CRUD para gestionar roles y personas, conectado a una base de datos SQL Server (DESKTOP-C4JUHKE\SQLEXPRESS) usando autenticaci√≥n de Windows. Incluye una relaci√≥n entre Persona y Rol.
 Requisitos
 
 .NET 8.0 o superior
@@ -7,7 +7,7 @@ SQL Server Express (instancia DESKTOP-C4JUHKE\SQLEXPRESS)
 Visual Studio o VS Code
 Entity Framework Core CLI (dotnet-ef)
 
-InstalaciÛn
+Instalaci√≥n
 
 Clona el repositorio:
 git clone https://github.com/AlexSC224/WebAppMvc.git
@@ -20,7 +20,7 @@ dotnet restore
 
 Crea la base de datos WebAppMvcDb en SQL Server:
 
-ConÈctate a DESKTOP-C4JUHKE\SQLEXPRESS con SQL Server Management Studio (SSMS).
+Con√©ctate a DESKTOP-C4JUHKE\SQLEXPRESS con SQL Server Management Studio (SSMS).
 Crea una base de datos llamada WebAppMvcDb.
 Asigna permisos db_datareader, db_datawriter, y db_ddladmin a tu usuario de Windows.
 
@@ -36,19 +36,19 @@ INSERT INTO Rol (Nombre) VALUES
 ('Administrador'),
 ('Usuario');
 INSERT INTO Persona (Nombre, RolId) VALUES
-('Juan PÈrez', 1),
-('MarÌa GÛmez', 2),
-('Carlos LÛpez', 3);
+('Juan P√©rez', 1),
+('Mar√≠a G√≥mez', 2),
+('Carlos L√≥pez', 3);
 
 
-Ejecuta la aplicaciÛn:
+Ejecuta la aplicaci√≥n:
 dotnet run
 
 
 Abre un navegador y ve a:
 
-https://localhost:<Personas>/Roles para el CRUD de roles.
-https://localhost:<Rols>/Personas para el CRUD de personas.
+https://localhost:<Roles>/ para el CRUD de roles.
+https://localhost:<Personas>/ para el CRUD de personas.
 
 
 
@@ -62,8 +62,8 @@ Data/ApplicationDbContext.cs: Contexto de Entity Framework Core.
 Views/Roles/: Vistas Razor para el CRUD de roles.
 Views/Personas/: Vistas Razor para el CRUD de personas.
 
-ConfiguraciÛn de la base de datos
-La conexiÛn a la base de datos est· configurada en appsettings.json:
+Configuraci√≥n de la base de datos
+La conexi√≥n a la base de datos est√° configurada en appsettings.json:
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=DESKTOP-C4JUHKE\\SQLEXPRESS;Database=WebAppMvcDb;Trusted_Connection=True;Encrypt=False;MultipleActiveResultSets=True"
